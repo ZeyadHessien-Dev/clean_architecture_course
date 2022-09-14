@@ -5,7 +5,7 @@ void main() {
   runApp(MyApp());
 }
 
-/// Core Module --> Put on it things that [Apply Features You Have]
+/// Why we create data sample module --> to know what case I have , and most important data from this object [json] and know data types
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
