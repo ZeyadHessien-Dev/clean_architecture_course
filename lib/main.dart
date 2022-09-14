@@ -31,7 +31,7 @@ void main() {
 // Steps [How I will Write Code]
 // 1. Start With Entities, Repositories (Domain Layer), Use Cases [Domain Layer is done]
 // 2. Second with Data Layers Models, Implement to repositories (Data Layer) , Data Sources we have
-// 3. Third Presentation Layer Bloc, UI [Design]
+// 3. Third Presentation Layer Bloc, UI [Design App]
 class MyApp extends StatelessWidget {
 
   @override
