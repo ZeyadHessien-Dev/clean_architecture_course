@@ -5,7 +5,6 @@ void main() {
   runApp(MyApp());
 }
 
-/// Why we create data sample module --> to know what case I have , and most important data from this object [json] and know data types
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
