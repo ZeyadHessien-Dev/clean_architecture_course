@@ -27,12 +27,8 @@ class PostRepositoryImplement implements PostRepository {
     if (await networkInfo.isConnected) {
       try {
         final remotePosts = await remoteDataSource.getAllPosts();
-
-        /// List<PostModel> would stored in remotePosts
         localDataSource.cachePost(remotePosts);
         return Right(remotePosts);
-
-        /// Must return List<Post> But Now I return List<PostModel> [No Problem Because PostModel extend Post]
       } on ServerException {
         return Left(ServerFailure());
       }
