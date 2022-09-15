@@ -3,9 +3,9 @@ import '../../../../core/error/failure.dart';
 import '../entities/post_entity.dart';
 import '../repositories/post_repositories.dart';
 
-class GetAllPostsUseCase {
+class AddPostsUseCase {
   final PostRepository repositories;
-  GetAllPostsUseCase({required this.repositories});
+  AddPostsUseCase({required this.repositories});
   Future<Either<Failure,Unit>> call(Post post) async {
     return await repositories.addPost(post);
   }
